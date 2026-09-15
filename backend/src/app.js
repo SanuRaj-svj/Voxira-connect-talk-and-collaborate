@@ -19,6 +19,10 @@ app.use(express.urlencoded({
 }));
 app.use('/api/v1/users',userRoutes);
 
+app.get("/",(req,res)=>{
+  res.send("Holo backend is running");
+});
+
 app.get("/home",(req,res)=>{
   res.send("Hello, World!");
 });
