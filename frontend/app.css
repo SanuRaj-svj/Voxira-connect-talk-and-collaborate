@@ -12,6 +12,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   background: #120d0a;
   color: #fff7ed;
+  overflow-x: hidden;
 }
 
 button,
@@ -675,6 +676,29 @@ a {
 }
 
 @media (max-width: 480px) {
+  .landingPageContainer {
+    padding: 16px 14px 44px;
+  }
+
+  .heroContent {
+    gap: 24px;
+    min-height: auto;
+  }
+
+  .textBlock h1 {
+    font-size: clamp(2.35rem, 13vw, 3.7rem);
+    line-height: 1;
+  }
+
+  .textBlock p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .showcase-scene {
+    min-height: 360px;
+  }
+
   .primaryBtn,
   .secondaryBtn {
     width: 100%;
@@ -689,6 +713,50 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .schedulePage,
+  .authPage {
+    align-items: flex-start;
+    padding: 16px 12px 32px;
+  }
+
+  .scheduleCard,
+  .authCard {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .scheduleHeader {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  .scheduleHeader .secondaryBtn,
+  .scheduleActions .submitBtn,
+  .scheduleActions .secondaryBtn {
+    width: 100%;
+  }
+
+  .scheduleActions,
+  .shareLinkBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .shareLinkBox input {
+    min-width: 0;
+  }
+
+  .formHeaderRow {
+    align-items: flex-start;
+  }
+
+  .authStepBox h1,
+  .authForm h2,
+  .successBox h2 {
+    font-size: 1.85rem;
   }
 }
 

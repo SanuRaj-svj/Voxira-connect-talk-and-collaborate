@@ -576,6 +576,7 @@
   justify-content: center;
   gap: 16px;
   padding: 12px 0 0;
+  flex-wrap: wrap;
 }
 
 .control-btn {
@@ -616,5 +617,117 @@
   .topbar-actions {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .feature-panel {
+    min-height: 420px;
+  }
+
+  .main-video,
+  .main-video video,
+  .lobby-preview,
+  .lobby-preview video {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-meet {
+    padding: 14px 10px 24px;
+  }
+
+  .lobby,
+  .meeting-room {
+    gap: 12px;
+  }
+
+  .lobby-header,
+  .meeting-topbar {
+    gap: 10px;
+  }
+
+  .lobby h1,
+  .meeting-topbar h2 {
+    font-size: 2rem;
+  }
+
+  .lobby-card {
+    max-width: none;
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .local-video-wrap,
+  .remote-video-wrap,
+  .remote-empty-state,
+  .feature-panel {
+    border-radius: 14px;
+  }
+
+  .main-video,
+  .main-video video,
+  .lobby-preview,
+  .lobby-preview video {
+    min-height: 240px;
+  }
+
+  .remote-video-wrap,
+  .remote-video-wrap video,
+  .remote-empty-state {
+    min-height: 190px;
+  }
+
+  .topbar-actions {
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .topbar-actions .authSecondary,
+  .topbar-actions .ghost-btn {
+    flex: 1;
+  }
+
+  .feature-tabs {
+    gap: 6px;
+    padding: 10px 10px 0;
+  }
+
+  .feature-tab {
+    flex: 1 1 calc(50% - 6px);
+    padding: 8px 6px;
+  }
+
+  .chat-form {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .chat-form button {
+    width: 100%;
+  }
+
+  .toolbar-inline,
+  .code-toolbar,
+  .replay-controls {
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+
+  .whiteboard-canvas,
+  .code-editor {
+    width: calc(100% - 24px);
+    margin: 12px;
+  }
+
+  .control-bar {
+    gap: 8px;
+  }
+
+  .control-btn {
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+    padding: 10px 8px;
+    font-size: 0.82rem;
   }
 }
