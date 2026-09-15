@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/authcontext.jsx';
 import '../../app.css';
 
-const STORAGE_KEY = 'holo-meeting-history';
+const STORAGE_KEY = 'Voxira-meeting-history';
 
 export default function Landing() {
   const navigate = useNavigate();
