@@ -395,7 +395,7 @@ export default function VideoMeetComponent() {
     if (!canvas) return;
 
     const link = document.createElement('a');
-    link.download = `holo-whiteboard-${Date.now()}.png`;
+    link.download = `Voxira-whiteboard-${Date.now()}.png`;
     link.href = canvas.toDataURL('image/png');
     link.click();
     addSessionReplayEntry('whiteboard', 'Whiteboard image downloaded', { exported: true });
