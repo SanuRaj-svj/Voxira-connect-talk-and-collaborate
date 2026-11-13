@@ -1,0 +1,24 @@
+{
+  "name": "Holo",
+  "version": "1.0.0",
+  "description": "this is for virtual face to face communication",
+  "license": "ISC",
+  "author": "sanu raj",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --env-file=.env ./node_modules/nodemon/bin/nodemon.js src/app.js",
+    "start": "node --env-file=.env src/app.js",
+    "prod": "pm2 src/app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "crypto": "^1.0.1",
+    "express": "^5.2.1",
+    "http-status": "^2.1.0",
+    "mongoose": "^9.6.2",
+    "nodemon": "^3.1.14",
+    "socket.io": "^4.8.3"
+  }
+}
